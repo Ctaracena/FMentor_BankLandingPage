@@ -78,12 +78,10 @@ header {
   width: 50%;
 }
 .hero-details h1 {
-  position: relative;
   font-size: 3.5em;
   font-weight: 400;
   width: 450px;
   color: var(--Dark-Blue);
-  z-index: 3;
 }
 .hero-details p {
   font-size: 18px;
@@ -185,4 +183,110 @@ header {
 .grid-container .card .text {
   font-size: 15px;
   line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+  width: 100vw;
+  height: 180px;
+  background-color: var(--Dark-Blue);
+}
+.footer-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding-top: 20px;
+}
+/* SOCIAL SECTION */
+.social img {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+.social .social-icons {
+  display: flex;
+}
+.social .social-icons .icon {
+  width: 21px;
+  height: 60px;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+.social .social-icons .icon:hover {
+  cursor: pointer;
+}
+.social .social-icons .icon.fb {
+  background-image: url(../images/icon-facebook.svg);
+}
+.social .social-icons .icon.fb:hover {
+  background-image: url(../images/icon-facebook-green.svg);
+}
+.social .social-icons .icon.youtube {
+  background-image: url(../images/icon-youtube.svg);
+}
+.social .social-icons .icon.youtube:hover {
+  background-image: url(../images/icon-youtube-green.svg);
+}
+.social .social-icons .icon.twitter {
+  background-image: url(../images/icon-twitter.svg);
+}
+.social .social-icons .icon.twitter:hover {
+  background-image: url(../images/icon-twitter-green.svg);
+}
+.social .social-icons .icon.pinterest {
+  background-image: url(../images/icon-pinterest.svg);
+}
+.social .social-icons .icon.pinterest:hover {
+  background-image: url(../images/icon-pinterest-green.svg);
+}
+.social .social-icons .icon.insta {
+  background-image: url(../images/icon-instagram.svg);
+}
+.social .social-icons .icon.insta:hover {
+  background-image: url(../images/icon-instagram-green.svg);
+}
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about a {
+  padding-bottom: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.about a:hover {
+  color: var(--Lime-Green);
+}
+
+/* CAREERS SECTION */
+.careers {
+  display: flex;
+  flex-direction: column;
+}
+.careers a {
+  padding-bottom: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.careers a:hover {
+  color: var(--Lime-Green);
+}
+
+/* BUTTON SECTION */
+.copyright {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 3em;
+}
+.copyright p {
+  color: var(--Grayish-Blue);
+  padding-top: 15px;
+  font-size: 14px;
 }
