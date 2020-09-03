@@ -1,5 +1,5 @@
 @media screen and (max-width: 1440px) {
-  #hero {
+  .hero {
     background-position-x: 500px;
   }
 }
@@ -16,7 +16,7 @@
   }
 
   
-  #latest-articles .grid-container .card img {
+  .latest-articles .grid-container .card img {
     height: 180px;
   }
   .card-details {
@@ -39,12 +39,13 @@
 
 @media screen and (max-width: 768px) {
   header {
+    position: relative;
     justify-content: space-between;
   }
   .logo {
     padding-left: 3em;
   }
-  header #navbar ul {
+  header .navbar ul {
     display: none;
   }
   .btnRequest {
@@ -55,6 +56,24 @@
     margin-right: 3em;
     cursor: pointer;
   }
+
+  .slide-in-top {
+    -webkit-animation: slide-in-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
   .mobile {
     position: relative;
     display: none;
@@ -63,17 +82,17 @@
     z-index: 3;
   }
 
-  .mobile #navbar ul {
+  .mobile .navbar ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .mobile #navbar ul li {
+  .mobile .navbar ul li {
     padding: 8px;
     height: auto;
   }
 
-  #hero {
+  .hero {
     flex-direction: column-reverse;
     align-items: center;
     background-position-x: 52%;
@@ -88,15 +107,15 @@
     top: .5em;
     right: -1em;
   }
-  #hero .hero-details {
+  .hero .hero-details {
     margin-left: 0;
     width: 100%;
   }
-  #hero .hero-details h1 {
+  .hero .hero-details h1 {
     text-align: center;
     margin: auto;
   }
-  #hero .hero-details p {
+  .hero .hero-details p {
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -117,7 +136,7 @@
     opacity: 0.7;
   }
 
-  #why-choose {
+  .why-choose {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -151,14 +170,14 @@
     padding: 20px 0;
   }
 
-  #latest-articles {
+  .latest-articles {
     width: 100vw;
     height: auto;
   }
-  #latest-articles h2 {
+  .latest-articles h2 {
     margin: 50px auto;
   }
-  #latest-articles .grid-container .card img {
+  .latest-articles .grid-container .card img {
     width: 100%;
     height: 250px;
     border-top-right-radius: 5px;
@@ -261,13 +280,13 @@
 }
 
 @media screen and (max-width: 500px) {
-  #hero {
+  .hero {
     height: 850px;
   }
-  #hero .hero-details h1 {
+  .hero .hero-details h1 {
     font-size: 46px;
   }
-  #hero .hero-details p {
+  .hero .hero-details p {
     text-align: center;
     width: 400px;
   }
@@ -288,30 +307,30 @@
 }
 
 @media screen and (max-width: 374px) {
-  #hero {
+  .hero {
     background-image: url(../images/bg-intro-mobile.svg);
     background-position-x: 0;
     background-position-y: -55px;
     height: auto;
   }
-  #hero .image-wrapper {
+  .hero .image-wrapper {
     position: relative;
     top: -85px;
   }
-  #hero .hero-details {
+  .hero .hero-details {
     position: relative;
     top: -80px;
   }
-  #hero .hero-details h1 {
+  .hero .hero-details h1 {
     width: 300px;
     font-size: 40px;
   }
-  #hero .hero-details p {
+  .hero .hero-details p {
     width: 320px;
     font-size: 15px;
   }
 
-  #why-choose {
+  .why-choose {
     margin-top: 0px;
   }
   .why-choose-details {
@@ -327,13 +346,13 @@
     width: 90%;
   }
 
-  #latest-articles h2 {
+  .latest-articles h2 {
     font-size: 30px;
   }
-  #latest-articles .grid-container {
+  .latest-articles .grid-container {
     margin-top: -40px;
   }
-  #latest-articles .grid-container .card-details h3 {
+  .latest-articles .grid-container .card-details h3 {
     font-size: 17px;
   }
 

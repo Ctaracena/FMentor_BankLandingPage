@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  position: relative;
+  position: fixed;
   width: 100vw;
   height: 60px;
   display: flex;
@@ -31,18 +31,18 @@ header {
   z-index: 2;
 }
 
-#navbar ul {
+.navbar ul {
   display: flex;
   align-items: center;
 }
-#navbar ul li {
+.navbar ul li {
   height: 60px;
   box-sizing: border-box;
   padding: 15px 1em;
   list-style: none;
   color: var(--Grayish-Blue);
 }
-#navbar ul li:hover {
+.navbar ul li:hover {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-image: linear-gradient(90deg, var(--Lime-Green), var(--Bright-Cyan)) 1;
@@ -70,7 +70,7 @@ header {
 }
 
 /* HERO SECTION */
-#hero {
+.hero {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -80,17 +80,17 @@ header {
   background-position-y: 93%;
   background-repeat: no-repeat;
 }
-#hero .hero-details {
+.hero .hero-details {
   margin-left: 8em;
   width: 50%;
 }
-#hero .hero-details h1 {
+.hero .hero-details h1 {
   font-size: 3.5em;
   font-weight: 400;
   width: 450px;
   color: var(--Dark-Blue);
 }
-#hero .hero-details p {
+.hero .hero-details p {
   font-size: 18px;
   line-height: 1.9;
   width: 450px;
@@ -108,7 +108,7 @@ header {
 }
 
 /* WHY-CHOOSE SECTION */
-#why-choose {
+.why-choose {
   width: 100vw;
   height: 100vh;
   background-color: var(--Light-Grayish-Blue);
@@ -151,20 +151,20 @@ header {
 }
 
 /* LATESTS ARTICLES SECTION */
-#latest-articles {
+.latest-articles {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#latest-articles h2 {
+.latest-articles h2 {
   font-size: 2.5em;
   font-weight: 400;
   color: var(--Dark-Blue);
   margin-left: 3em;
 }
-#latest-articles .grid-container .card img {
+.latest-articles .grid-container .card img {
   width: 100%;
   height: 250px;
   border-top-right-radius: 5px;
@@ -185,7 +185,7 @@ header {
   text-decoration: none;
   color: var(--Dark-Blue);
 }
-#latest-articles .grid-container .card h3:hover {
+.latest-articles .grid-container .card h3:hover {
   color: var(--Lime-Green);
 }
 .grid-container .card .text {
