@@ -4,7 +4,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   .image-wrapper img {
     right: -4em;
   }
@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   header {
     position: relative;
     justify-content: space-between;
@@ -215,7 +215,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .image-wrapper img {
     top: -5em;
   }
@@ -290,12 +290,20 @@
     text-align: center;
     width: 400px;
   }
+
   .image-wrapper img {
     top: -2.5em;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .hero {
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-position-x: 0px;
+    background-position-y: -55px;
+    background-size: contain;
+    height: auto;
+  }
   .hero-details p {
     font-size: 16px;
   }
@@ -304,15 +312,7 @@
     width: 95%;
     margin: auto;
   }
-}
 
-@media screen and (max-width: 374px) {
-  .hero {
-    background-image: url(../images/bg-intro-mobile.svg);
-    background-position-x: 0;
-    background-position-y: -55px;
-    height: auto;
-  }
   .hero .image-wrapper {
     position: relative;
     top: -85px;
@@ -343,7 +343,7 @@
     padding-bottom: 50px;
   }
   .grid-container .card {
-    width: 90%;
+    width: 80%;
   }
 
   .latest-articles h2 {
@@ -359,4 +359,30 @@
   .copyright p {
     padding: 0;
   }
+}
+
+
+@media screen and (max-width: 350px) {
+  .hero-details p {
+    font-size: 14px;
+  }
+  .hero .hero-details h1 {
+    width: 280px;
+    font-size: 36px;
+  }
+  .hero .hero-details p {
+    width: 280px;
+    font-size: 14px;
+  }
+
+  .why-choose-details p {
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .grid-container .card p {
+    font-size: 14px;
+  }
+
 }

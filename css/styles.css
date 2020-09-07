@@ -170,6 +170,7 @@ header {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+
 .card-details {
   background-color: var(--White);
   margin-top: -20px;
